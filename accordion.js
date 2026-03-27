@@ -15,14 +15,13 @@ accordionBtns.forEach((accordion) => {
   accordion.onclick = function () {
     this.classList.toggle("is-open");
 
-    // Update aria-expanded to reflect open/closed state for screen readers
     this.setAttribute("aria-expanded", this.classList.contains("is-open").toString());
 
     let content = this.nextElementSibling;
     console.log(content);
 
     if (content.style.maxHeight) {
-      //this is if the accordion is open
+      
       content.style.maxHeight = null;
     } else {
       //if the accordion is currently closed
