@@ -17,6 +17,7 @@ class Accordion {
   }
   onButtonClick() {
     this.toggle(!this.open);
+    
   }
   toggle(open) {
     // don't do anything if the open state doesn't change
